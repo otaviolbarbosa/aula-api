@@ -9,7 +9,7 @@ class EscolaController extends Controller
 {
     //
     public function index() {
-    	return Escola::all();
+    	return Escola::paginate(5);
     }
 
     public function show($id) {
